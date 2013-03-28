@@ -11,8 +11,8 @@ void testApp::setup(){
 	
 	ofSoundStreamSetup(0,2,this, 44100, BUFFER_SIZE, 4);	
 	
-	left = new float[BUFFER_SIZE];
-	right = new float[BUFFER_SIZE];
+	//left = new float[BUFFER_SIZE];
+	//right = new float[BUFFER_SIZE];
 
 	ofSetHexColor(0x666666);
 	
@@ -62,9 +62,6 @@ void testApp::draw(){
 		ofRect(200+(i*20),600-FFTanalyzer.peaks[i] * 6,20,-4);
 	}
 		 
-		 //float * averages; // the actual averages
-		 //float * peaks; // peaks of the averages, aka "maxAverages" in other implementations
-
 }
 
 

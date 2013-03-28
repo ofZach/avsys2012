@@ -12,12 +12,14 @@ void testApp::setup(){
 	// 256 samples per buffer
 	// 4 num buffers (latency)
 	
+    AA.setup();
+    
 	//setup of sound input
 	ofSoundStreamSetup(0, 2, this, 44100, 256, 4);	
 	left = new float[256];	
 	right = new float[256];
 	
-	AA.setup();
+	
 	
 	dinFont.loadFont("DIN.otf", 50);
 		

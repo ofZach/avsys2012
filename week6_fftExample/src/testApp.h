@@ -24,19 +24,16 @@ class testApp : public ofBaseApp {
 		void audioReceived 	(float * input, int bufferSize, int nChannels); 
 	
 		FFTOctaveAnalyzer FFTanalyzer;
-	
+		
+        float left[BUFFER_SIZE];
+        float right[BUFFER_SIZE];
+                
+        fft		myfft;
 
-	private:	
-		
-		float * left;
-		float * right;
-		int 	bufferCounter;
-		fft		myfft;
-		
-		float magnitude[BUFFER_SIZE];
-		float phase[BUFFER_SIZE];
-		float power[BUFFER_SIZE];
-		float freq[BUFFER_SIZE/2];
+        float magnitude[BUFFER_SIZE];
+        float phase[BUFFER_SIZE];
+        float power[BUFFER_SIZE];
+        float freq[BUFFER_SIZE/2];
 };
 
 #endif	
