@@ -27,9 +27,9 @@
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
-		FD05E3BC16F8910E00A7CAD7 /* libaubio.4.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD05E3B916F8910E00A7CAD7 /* libaubio.4.0.0.dylib */; };
 		FD05E3BD16F8910E00A7CAD7 /* aubioAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD05E3BA16F8910E00A7CAD7 /* aubioAnalyzer.cpp */; };
 		FD05E3C016F8916B00A7CAD7 /* sinOscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD05E3BE16F8916B00A7CAD7 /* sinOscillator.cpp */; };
+		FD2237B91705986E009FD0B2 /* libaubio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2237B81705986E009FD0B2 /* libaubio.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,11 +127,11 @@
 		FD05E3B616F8910E00A7CAD7 /* hist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hist.h; sourceTree = "<group>"; };
 		FD05E3B716F8910E00A7CAD7 /* scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale.h; sourceTree = "<group>"; };
 		FD05E3B816F8910E00A7CAD7 /* vecutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vecutils.h; sourceTree = "<group>"; };
-		FD05E3B916F8910E00A7CAD7 /* libaubio.4.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libaubio.4.0.0.dylib; sourceTree = "<group>"; };
 		FD05E3BA16F8910E00A7CAD7 /* aubioAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aubioAnalyzer.cpp; sourceTree = "<group>"; };
 		FD05E3BB16F8910E00A7CAD7 /* aubioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aubioAnalyzer.h; sourceTree = "<group>"; };
 		FD05E3BE16F8916B00A7CAD7 /* sinOscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sinOscillator.cpp; sourceTree = "<group>"; };
 		FD05E3BF16F8916B00A7CAD7 /* sinOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sinOscillator.h; sourceTree = "<group>"; };
+		FD2237B81705986E009FD0B2 /* libaubio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaubio.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,7 @@
 				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
 				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
 				E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */,
-				FD05E3BC16F8910E00A7CAD7 /* libaubio.4.0.0.dylib in Frameworks */,
+				FD2237B91705986E009FD0B2 /* libaubio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +257,8 @@
 		FD05E38816F8910E00A7CAD7 /* aubio */ = {
 			isa = PBXGroup;
 			children = (
+				FD2237B81705986E009FD0B2 /* libaubio.a */,
 				FD05E38916F8910E00A7CAD7 /* aubio */,
-				FD05E3B916F8910E00A7CAD7 /* libaubio.4.0.0.dylib */,
 			);
 			path = aubio;
 			sourceTree = "<group>";
@@ -608,8 +608,10 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/src/aubio\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/src/aubio\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
@@ -696,8 +698,10 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/src/aubio\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/src/aubio\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
