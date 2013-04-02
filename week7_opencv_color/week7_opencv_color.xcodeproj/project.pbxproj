@@ -9,6 +9,168 @@
 		<string>42</string>
 		<key>objects</key>
 		<dict>
+			<key>5a4349e9754d6fa14c0f2a3a1abc30b6</key>
+			<dict>
+				<key>fileRef</key>
+				<string>fc5da1c87211d4f6377da7199d8c5a1e</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>fc5da1c87211d4f6377da7199d8c5a1e</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>tinyxmlparser.cpp</string>
+				<key>path</key>
+				<string>../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>9d44dc88ef9e7991b4a09951e2e4769f</key>
+			<dict>
+				<key>fileRef</key>
+				<string>832bdc407620cdba568b713d2252c43c</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>832bdc407620cdba568b713d2252c43c</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>tinyxmlerror.cpp</string>
+				<key>path</key>
+				<string>../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>b21e7e5f548eea92f368040bb1aa2f69</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>tinyxml.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxXmlSettings/libs/tinyxml.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>6e54289412d2d94f45a051132369530c</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>2b40eda85beb63e46785bc299a638898</string>
+					<string>b21e7e5f548eea92f368040bb1aa2f69</string>
+					<string>832bdc407620cdba568b713d2252c43c</string>
+					<string>fc5da1c87211d4f6377da7199d8c5a1e</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>libs</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>933a2227713c720ceff80fd967d0a8ee</key>
+			<dict>
+				<key>fileRef</key>
+				<string>2b40eda85beb63e46785bc299a638898</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>2b40eda85beb63e46785bc299a638898</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>tinyxml.cpp</string>
+				<key>path</key>
+				<string>../../../addons/ofxXmlSettings/libs/tinyxml.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>01dcc0911400f9acf5b65578af4ec8f9</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxXmlSettings.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxXmlSettings/src/ofxXmlSettings.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>6ecef0d76bc33727823eadffc320c44d</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>50df87d612c5aae17aafa6c02c6bc570</string>
+					<string>01dcc0911400f9acf5b65578af4ec8f9</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>1f4fb5c423662b96adfdcc0badec1cb0</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>6ecef0d76bc33727823eadffc320c44d</string>
+					<string>6e54289412d2d94f45a051132369530c</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ofxXmlSettings</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>63b57ac5bf4ef088491e0317dbb2ecaa</key>
+			<dict>
+				<key>fileRef</key>
+				<string>50df87d612c5aae17aafa6c02c6bc570</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>50df87d612c5aae17aafa6c02c6bc570</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxXmlSettings.cpp</string>
+				<key>path</key>
+				<string>../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
 			<key>97fbd89e6180673035ad1083e6afc93e</key>
 			<dict>
 				<key>explicitFileType</key>
@@ -2306,6 +2468,7 @@
 				<key>children</key>
 				<array>
 					<string>a0b90d3b0adb9c1716816714bf7f212b</string>
+					<string>1f4fb5c423662b96adfdcc0badec1cb0</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -2736,6 +2899,8 @@
 						<string>../../../addons/ofxOpenCv/libs/opencv/lib</string>
 						<string>../../../addons/ofxOpenCv/libs/opencv/lib/osx</string>
 						<string>../../../addons/ofxOpenCv/src</string>
+						<string>../../../addons/ofxXmlSettings/libs</string>
+						<string>../../../addons/ofxXmlSettings/src</string>
 					</array>
 					<key>ARCHS</key>
 					<string>$(NATIVE_ARCH)</string>
@@ -2820,6 +2985,8 @@
 						<string>../../../addons/ofxOpenCv/libs/opencv/lib</string>
 						<string>../../../addons/ofxOpenCv/libs/opencv/lib/osx</string>
 						<string>../../../addons/ofxOpenCv/src</string>
+						<string>../../../addons/ofxXmlSettings/libs</string>
+						<string>../../../addons/ofxXmlSettings/src</string>
 					</array>
 					<key>ARCHS</key>
 					<string>$(NATIVE_ARCH)</string>
@@ -2885,6 +3052,10 @@
 					<string>e212c821d1064b92dd953a42edc08aa7</string>
 					<string>63020f16c7e8ded9801112417e67ad38</string>
 					<string>d3301f6a0b43bb293ed97c1d5d26c840</string>
+					<string>63b57ac5bf4ef088491e0317dbb2ecaa</string>
+					<string>933a2227713c720ceff80fd967d0a8ee</string>
+					<string>9d44dc88ef9e7991b4a09951e2e4769f</string>
+					<string>5a4349e9754d6fa14c0f2a3a1abc30b6</string>
 				</array>
 				<key>isa</key>
 				<string>PBXSourcesBuildPhase</string>
@@ -2940,7 +3111,7 @@
 				<key>isa</key>
 				<string>PBXNativeTarget</string>
 				<key>name</key>
-				<string>week6_opencv_color</string>
+				<string>week7_opencv_color</string>
 				<key>productName</key>
 				<string>myOFApp</string>
 				<key>productReference</key>
@@ -2957,7 +3128,7 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>path</key>
-				<string>week6_opencv_colorDebug.app</string>
+				<string>week7_opencv_colorDebug.app</string>
 				<key>sourceTree</key>
 				<string>BUILT_PRODUCTS_DIR</string>
 			</dict>

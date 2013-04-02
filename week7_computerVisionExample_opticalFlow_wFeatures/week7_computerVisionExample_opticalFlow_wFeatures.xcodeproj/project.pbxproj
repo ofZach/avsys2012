@@ -2553,7 +2553,7 @@
 				<key>isa</key>
 				<string>PBXNativeTarget</string>
 				<key>name</key>
-				<string>week6_computerVisionExample_opticalFlow_wFeatures</string>
+				<string>week7_computerVisionExample_opticalFlow_wFeatures</string>
 				<key>productName</key>
 				<string>myOFApp</string>
 				<key>productReference</key>
@@ -2570,7 +2570,7 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>path</key>
-				<string>week6_computerVisionExample_opticalFlow_wFeaturesDebug.app</string>
+				<string>week7_computerVisionExample_opticalFlow_wFeaturesDebug.app</string>
 				<key>sourceTree</key>
 				<string>BUILT_PRODUCTS_DIR</string>
 			</dict>
